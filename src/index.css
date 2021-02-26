@@ -4,6 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: url("./img/background.png");
 }
+.container {
+  padding-bottom: 15%;
+}
 .message-line {
   display: flex;
   width: 100%;
@@ -23,4 +26,17 @@ body {
 
 .mess-color {
   background: lightsalmon;
+}
+
+.send-message-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: royalblue;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
 }
