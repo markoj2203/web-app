@@ -2,4 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: url("./img/background.png");
+}
+.message-line {
+  display: flex;
+  width: 100%;
+}
+.card {
+  width: 18rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mess-color {
+  background: lightsalmon;
 }
