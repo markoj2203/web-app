@@ -4,12 +4,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: url("./img/background.png");
 }
+#root {
+  height: 100vh;
+}
+.message-container {
+  height: 90vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
 .container {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 .message-line {
   display: flex;
   width: 100%;
+  padding: 0.2rem;
 }
 .card {
   width: 18rem;
@@ -39,4 +49,5 @@ body {
   left: 0px;
   right: 0px;
   overflow: hidden;
+  height: 10vh;
 }

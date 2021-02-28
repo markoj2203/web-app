@@ -5,12 +5,10 @@ import PostMessage from "./PostMessage";
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="message-container">
         <Messages />
       </div>
-      <div>
-        <PostMessage />
-      </div>
+      <PostMessage />
     </>
   );
 }

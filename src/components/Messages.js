@@ -25,11 +25,11 @@ function Messages() {
   }, [newMessage]);
 
   return (
-    <>
+    <div className="container">
       {data.map((item) => (
         <Message key={item._id} data={item} />
       ))}
-    </>
+    </div>
   );
 }
 

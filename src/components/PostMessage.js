@@ -33,10 +33,17 @@ export default function PostMessage() {
 
   return (
     <div className="send-message-container">
-      <input type="text" placeholder="Message" ref={inputEl} />
-      <button type="button" className="btn btn-danger" onClick={postMessage}>
-        Send
-      </button>
+      <div style={{ display: "flex", width: "70%" }}>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Message"
+          ref={inputEl}
+        />
+        <button type="button" className="btn btn-danger" onClick={postMessage}>
+          Send
+        </button>
+      </div>
     </div>
   );
 }
