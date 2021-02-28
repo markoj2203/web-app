@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-
-const token = "XWJU9HQeFeqf";
+import { token } from "../API_data";
 
 export default function PostMessage() {
   const inputEl = useRef(null);
