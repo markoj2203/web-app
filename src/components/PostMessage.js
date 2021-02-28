@@ -33,12 +33,13 @@ export default function PostMessage() {
 
   return (
     <div className="send-message-container">
-      <div style={{ display: "flex", width: "70%" }}>
+      <div className="message-elements">
         <input
           type="text"
           className="form-control"
           placeholder="Message"
           ref={inputEl}
+          style={{ margin: "0.5rem" }}
         />
         <button type="button" className="btn btn-danger" onClick={postMessage}>
           Send

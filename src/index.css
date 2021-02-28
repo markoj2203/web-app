@@ -35,7 +35,7 @@ body {
 }
 
 .mess-color {
-  background: lightsalmon;
+  background: lightgoldenrodyellow;
 }
 
 .send-message-container {
@@ -50,4 +50,10 @@ body {
   right: 0px;
   overflow: hidden;
   height: 10vh;
+}
+.message-elements {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
 }
