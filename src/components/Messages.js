@@ -10,15 +10,16 @@ function Messages() {
 
   useEffect(() => {
     const getData = async () => {
-      //let arrData = [];
       await axios
         .get(
           `https://chatty.kubernetes.doodle-test.com/api/chatty/v1.0/?token=${TOKEN}`
         )
         .then(function (response) {
-          //arrData.push(response.data);
           if (newMessage !== undefined) {
             response.data.push(newMessage);
+            localStorage.setItem("dataMess", response.data);
+          } else {
+            localStorage.removeItem("dataMess");
           }
           setData(response.data);
         });
